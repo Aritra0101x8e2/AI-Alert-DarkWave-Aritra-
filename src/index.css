@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 223 34% 13%;
+    --foreground: 0 0% 100%;
+
+    --card: 222 33% 18%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 222 33% 18%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 196 71% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 25%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 33% 25%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 196 71% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 351 84% 57%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 30%;
+    --input: 217 33% 25%;
+    --ring: 196 71% 52%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 222 33% 18%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 196 71% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 30% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 222 33% 25%;
+    --sidebar-ring: 196 71% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-navy text-foreground font-inter;
+  }
+}
+
+@layer components {
+  .cyber-border {
+    @apply border border-cyberBlue/50 shadow-[0_0_10px_rgba(30,174,219,0.3)] rounded-md;
+  }
+  
+  .neon-text {
+    @apply text-cyberBlue drop-shadow-[0_0_5px_rgba(30,174,219,0.7)];
+  }
+  
+  .danger-text {
+    @apply text-danger drop-shadow-[0_0_5px_rgba(234,56,76,0.7)];
+  }
+  
+  .card-gradient {
+    @apply bg-gradient-to-br from-secondary/70 to-navy;
+  }
+}
